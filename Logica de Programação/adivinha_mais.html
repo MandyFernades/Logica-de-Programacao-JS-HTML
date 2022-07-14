@@ -1,0 +1,56 @@
+<meta charset="UTF-8">
+
+<!-- O programa será um jogo de adivinhar -->
+<!-- linguagem javasript -->
+
+<!-- ATENÇÃO o <p> está servido para pular a linha -->
+
+<!-- estamos fazendo uma função pra pular linha e uma função para mostrar a frase -->
+
+
+<!-- --------------------ATENÇÃO----------------------  -->
+
+<!-- o programa abaixo é um jogo de adivinhar-->
+
+
+<!--a tag input serve para criar um campo para digitarmos algo-->
+<!-- input e button está no mundo html -->
+
+
+
+
+    </script>
+    <input/>
+
+    <!-- tag button serve para criar um botão -->
+    <button>Adivinhar Numero</button>
+
+    <script> 
+
+
+    var segredo = Math.round(Math.random() * 10);
+    // querySelector serve para pegar a tag input para trabalharmos 
+    var input = document.querySelector("input");
+        input.focus();
+    //irá verificar depois que colocarmos o valor
+    function verifica() {
+    //mostrará o valor
+        if(input.value == segredo) {
+
+        alert("Você ACERTOU!");
+        } else {
+
+        alert("Você ERROU!!!!!!!!");
+        }
+                 //vamos fazer a caixa input limpar sozinha se errar
+                input.value = "";
+                //após a caixinha limpar ela vai dar um foco para o user tentar novamente
+                input.focus();
+
+    }
+    //vamos pegar o botão no mundo js
+    var button = document.querySelector("button");
+
+    button.onclick = verifica;
+
+    </script>

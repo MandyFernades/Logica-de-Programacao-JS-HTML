@@ -1,0 +1,63 @@
+<meta charset="UTF-8">
+
+<!-- O programa será um jogo de adivinhar os numeros -->
+<!-- linguagem javasript -->
+
+<!-- ATENÇÃO o <p> está servido para pular a linha -->
+
+<!-- estamos fazendo uma função pra pular linha e uma função para mostrar a frase -->
+
+
+<!-- --------------------ATENÇÃO----------------------  -->
+
+<!-- o programa abaixo é um jogo de adivinhar os numeros -->
+
+<script> 
+
+function pulalinha(){
+
+    document.write("<p>")
+    document.write("<p>")
+
+    
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulalinha();
+
+    }
+
+//vamos criar numeros aleatórios para o jogo ficar legal
+     var numeroPensado = Math.round(Math.random () * 100);
+// o console.log irá exibir no console do navegador
+    //console.log(numeroPensado)
+
+    //criando um tentativas de chutes
+        var tentativas = 1;
+
+        while ( tentativas <= 3 ) {
+
+
+        var chute = parseInt(prompt("Digite seu chute!"));
+
+        if(chute == numeroPensado){
+
+            mostrar("Você acertou, o numero pensado era + numeroPensado");
+            break; //serve para quebrar o lupping (while)
+
+
+        //    usamos a função else para dizer que se não for.. sendo assim vai te ajudar a diminuir o cod
+        }else{
+
+            mostra("Você errou, o número pensado foi " + numeroPensado);
+
+            }
+
+            tentativas++;
+
+        }
+
+        mostra("FIM!")
+

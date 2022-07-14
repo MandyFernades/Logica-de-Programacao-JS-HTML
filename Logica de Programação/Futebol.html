@@ -1,0 +1,61 @@
+<meta charset="UTF-8">
+
+<!-- O programa irá calcular o IMC -->
+<!-- linguagem javasript -->
+
+<!-- ATENÇÃO o <p> está servido para pular a linha -->
+
+<!-- estamos fazendo uma função pra pular linha e uma função para mostrar a frase -->
+<script> 
+function pulalinha(){
+
+    document.write("<p>")
+    document.write("<p>")
+
+    
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulalinha();
+
+    }
+//prompt é uma função sempre abra e feche os parenteses 
+// quando ler o prompt sempre vai ser texto
+// quando vc pega o texto que dentro desse texto ha um numero..
+// e faz uma multiplicação ou divisão o JS converte o texto para numero
+// o parseint recebe algo e transforma em numero
+
+    var vitorias = parseInt(prompt("Entre com o número de vitórias: "));
+
+    var empates =parseInt(prompt("Entre com o numero de empates: "));
+
+    var pontos = vitorias * 3 + empates;
+
+   
+    mostra("Os pontos do seu time é: " + pontos);
+
+    // se pontos maior que 28 mostra a mensagem abaixo
+
+//ATENÇÃO: colocar o parenteses pois o if vai receber o resultado dessa operação
+
+    if(pontos > 28) 
+    mostra("Seu time está melhor que o ano passado.");
+
+    // se pontos menor que 28:
+
+    if(pontos < 28) 
+    mostra("Seu time está pior que o ano passado.");
+
+
+// se pontos é igual 28:
+// sempre que for colocar o sinal de igual para aparecer o resultado igual ao msm indicado colocar dois sinais
+    if (pontos == 28)   
+    mostra("Seu time está igual ao ano passado.");
+
+    mostra("FIM!")
+
+
+
+</script>

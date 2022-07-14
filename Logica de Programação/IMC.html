@@ -1,0 +1,100 @@
+<meta charset="UTF-8">
+
+<!-- O programa irá calcular o IMC -->
+<!-- linguagem javasript -->
+
+<!-- ATENÇÃO o <p> está servido para pular a linha -->
+
+<!-- estamos fazendo uma função pra pular linha e uma função para mostrar a frase -->
+<script> 
+function pulalinha(){
+
+    document.write("<p>")
+    document.write("<p>")
+
+    
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulalinha();
+
+    }
+
+// vamos criar uma função onde irá calcular o IMC
+//se for passar 2 valores devemos colocar 2 parametros como no local abaixo
+
+
+
+    function calculaIMC(altura, peso) {
+
+    //ele irá calcular o que está dentro do parenteses e depois pegar o peso e dividir pelo resultado
+      return peso / (altura * altura)
+        
+    }
+    var nome = prompt("Informe seu nome");
+    var alturaInformada = prompt(nome + " Informe sua altura");
+    var pesoInformado = prompt(nome +" Informe seu peso");
+
+    var imc = calculaIMC(alturaInformada, pesoInformado);
+
+    document.write(nome + " o seu  IMC é " + imc);
+    pulalinha();
+
+    // --------------------ATENÇÃO --------------------------------
+
+    // se seu IMC é menor que 18.5 você está abaixo do que deveria
+    // se está acima de 35 ele está alto
+    // se ele entra entre 18.5 e 35 você está na média
+// -----------------------------------------------------------------
+
+    if(imc < 18.5) {
+        mostra(" Olá, você está abaixo do recomendado");
+    }
+
+    if(imc > 35){
+        mostra(" Olá, você está acima do recomendado");
+    }
+//o && é uma função "E" onde irá resumir seu código
+    if(imc >= 18.5 && imc <= 35){
+        if(imc <= 35){
+            mostra(" Olá, seu IMC está excelente")
+
+            mostra("Parabéns!!")
+        }
+    }
+
+
+//ANOTAÇÕES  ADICIONAIS 
+
+
+// a palavra return vai retornar a variavel  do valor do imc da pessoa
+
+        // var alturaInformada = 1.68;
+        // var e
+
+        
+    
+
+// abaixo será calculado o IMC do usuario
+// a variavel "imc..." irá receber o imc calculado pela função "calculaIMC"
+
+
+//    var imcAmanda = calculaIMC(65, 1.68);
+//    var imcAmigo = calculaIMC(78, 1.64);
+//    var totalImc = calculaIMC(65, 1.68) + calculaIMC(78, 1.64)
+
+
+//    document.write("A soma dos imc's é " + totalImc);
+    
+//    pulalinha();
+
+//    mostra(imcAmanda);
+//    pulalinha();
+
+//    mostra(imcAmigo);
+
+</script>
+
+

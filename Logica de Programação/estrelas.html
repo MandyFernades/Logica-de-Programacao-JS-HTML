@@ -1,0 +1,47 @@
+<meta charset="UTF-8">
+
+<!-- O programa irá contar as estrelas -->
+<!-- linguagem javasript -->
+
+<!-- ATENÇÃO o <p> está servido para pular a linha -->
+
+<!-- estamos fazendo uma função pra pular linha e uma função para mostrar a frase -->
+
+
+<!-- --------------------ATENÇÃO----------------------  -->
+
+<!-- o programa abaixo é um contador de estrelas -->
+
+<script> 
+function pulalinha(){
+
+    document.write("<p>")
+    document.write("<p>")
+
+    
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulalinha();
+
+    }
+
+    //for responsavel em criar as 3 linhas
+    for(var linha = 1; linha <= 3; linha++){
+
+        //for responsavel em criar minha linha com 10 estrelas
+        for(var coluna = 1; coluna <= 10; coluna++){
+
+            document.write("*");
+
+        }
+
+        pulalinha();
+
+
+    }
+
+   
+</script> 

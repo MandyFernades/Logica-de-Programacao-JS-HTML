@@ -1,0 +1,76 @@
+<meta charset="UTF-8">
+
+<!-- linguagem javasript -->
+<script> 
+// escrever no mundo html dentro do javascrip
+// tipo texto coloca aspas
+// js é uma linguagem dinamica
+// document.write recebe texto
+// document.write aceita o numero sem as aspas
+// com o numero consegue realizar soma
+
+// --------------------------------------OUTRA LINHA------------------------
+//ATENÇÃO só será STRING se possuir aspas ""
+//declarando o ano que estamos
+//variavel ano recebe o ano atual
+// = recebe um valor
+
+var ano = 2021;
+// na hora que for computar o valor ele irá trocar o ano pelo 2021
+// cuidado para não colocar as letras diferentes exemplo "ANO - ano"
+// se colocar as letras diferentes o programa não irá funcionar
+
+
+document.write("Amanda tem: "  + (ano - 2003));
+document.write("<p>");
+document.write("Janete tem: " + (ano - 1979));
+document.write("<p>");
+
+// na linha abaixo iremos motrar outro ano, sendo assim o programa irá calcular o ano que for adicionado
+// não iremos precisar colocar o "var" pois já declaramos no começo do código
+
+// = recebe um valor
+
+ano = 2022;
+document.write("Fernando tem: " + (ano - 1970));
+
+
+// abaixo mostramos um document.write realizando uma soma em js
+//Com as aspas o js le um texto
+// sem as aspas ele entende que é um numero, sendo assim com a aspas ele faz uma concatenação
+// document.write(10 + 8);
+
+// ----------------------------OUTRA LINHA--------------------------------------
+
+// abaixo iremos demostrar como calcular a média das idades das pessoas
+// iremos declarar uma variavel média para simplificar nosso codigo
+//para arrendondar vamor utilizar math - matematica + round - arredondar 
+// abaixo iremos simplificar o codigo pois se o usuario verificar as idades não irá saber se qual e qual
+// = recebe um valor
+
+
+var idadeAmanda = 18;
+var idadeJanete = 42;
+var idadeFernando = 52;
+
+var media = (idadeAmanda + idadeJanete + idadeFernando)/3;
+// sendo assim iremos colocar a variavel no local da expressão
+document.write("<p>");
+document.write("A média das idades é: " + Math.round(media));
+document.write("<p>");
+
+
+// ----------------------------OUTRA LINHA--------------------------------------
+
+
+//este programa abaixo irá mostrar o nome da pessoa e a idade.
+// ele irá concatenar o nome com a idade
+// variavel não guarda apenas numero
+
+// = recebe um valor
+
+var nome = 'Amanda';
+
+document.write("A idade da  " + nome + " é: " + idadeAmanda);
+
+</script>

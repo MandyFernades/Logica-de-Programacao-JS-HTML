@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+
+<!-- O programa irá calcular o IMC -->
+<!-- linguagem javasript -->
+
+<!-- ATENÇÃO o <p> está servido para pular a linha -->
+
+<!-- estamos fazendo uma função pra pular linha e uma função para mostrar a frase -->
+
+
+<!-- --------------------ATENÇÃO----------------------  -->
+
+<!-- o programa abaixo é um programa que vai exibir os anos que tiveram copa a partir de 1930 -->
+
+<script> 
+function pulalinha(){
+
+    document.write("<p>")
+    document.write("<p>")
+
+    
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulalinha();
+
+    }
+    var limite =prompt("Entre com o ano Limite ")
+    var anocopa = 1930;
+
+
+    
+    while (anocopa <= limite){
+
+    mostra("Teve copa em " + anocopa);
+    anocopa= anocopa + 4;
+
+    }
+
+    mostra("FIM")
+</script>
